@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+        <!-- Define views for events -->
+        <record id="testmodulo_event_calendar_view" model="ir.ui.view">
+            <field name="name">testmodulo.event.calendar</field>
+            <field name="model">testmodulo.event</field>
+            <field name="arch" type="xml">
+                <!-- Define your calendar view for events -->
+                <calendar string="Events" date_start="start_date" date_stop="end_date">
+                    <field name="name"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="description"/>
+                </calendar>
+            </field>
+        </record>
+
+        <!-- Define views for cleaning schedules -->
+        <record id="testmodulo_cleaning_schedule_tree_view" model="ir.ui.view">
+            <field name="name">testmodulo.cleaning.schedule.tree</field>
+            <field name="model">testmodulo.cleaning_schedule</field>
+            <field name="arch" type="xml">
+                <!-- Define your tree view for cleaning schedules -->
+                <tree>
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Define views for touristic outings -->
+        <record id="testmodulo_touristic_outing_tree_view" model="ir.ui.view">
+            <field name="name">testmodulo.touristic.outing.tree</field>
+            <field name="model">testmodulo.touristic_outing</field>
+            <field name="arch" type="xml">
+                <!-- Define your tree view for touristic outings -->
+                <tree>
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

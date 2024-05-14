@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import models
+from . import models, cleaning_schedule,touristic_outing,event
